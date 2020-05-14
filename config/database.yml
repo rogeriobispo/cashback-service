@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5431
+  username: root
+  password: root
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: cashback_service_development
+
+test:
+  <<: *default
+  database: cashback_service_test
+
+production:
+  <<: *default
+  database: cashback_service_production
+  username: cashback_service
+  password: <%= ENV['CASHBACK_SERVICE_DATABASE_PASSWORD'] %>
