@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 2020_05_15_033516) do
   enable_extension "plpgsql"
 
   create_table "offers", force: :cascade do |t|
-    t.string "advertiser_name"
-    t.string "url"
-    t.string "description"
-    t.date "starts_at"
+    t.string "advertiser_name", null: false
+    t.string "url", null: false
+    t.string "description", limit: 500, null: false
+    t.date "starts_at", null: false
     t.date "ends_at"
     t.boolean "premium"
     t.datetime "created_at", precision: 6, null: false
