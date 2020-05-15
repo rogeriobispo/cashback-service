@@ -9,6 +9,7 @@ Bundler.require(*Rails.groups)
 module CashbackService
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.generators.test_framework :rspec
     config.load_defaults 6.0
 
     # Settings in config/environments/* take precedence over those specified here.
