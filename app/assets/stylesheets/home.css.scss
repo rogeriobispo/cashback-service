@@ -1,0 +1,49 @@
+
+.container-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  box-sizing: border-box;
+  margin: 100px auto;
+}
+
+.main-card-offer{
+  position: relative;
+  border: 2px solid black;
+  margin: 20px;
+  height: 300px;
+  flex: 1 1 360px;
+}
+
+.main-card-offer-tag {
+  background-color: #8b1a00;
+  font-size: 20px;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  width: 100px;
+  top: -15px;
+  right: -16px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.main-card-offer h1{
+  margin: 100px auto 70px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.main-card-offer a{
+  color: black;
+  background-color: greenyellow;
+  display: block;
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+}
