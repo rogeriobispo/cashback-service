@@ -1,6 +1,7 @@
 <div class="container-flex">
-  <%= render 'card-detail'%>
-  <%= render 'card-detail'%>
-  <%= render 'card-detail'%>
+  <% @offers.each do |offer| %>
+    <%= render  partial: 'card-detail', locals: { offer: offer } %>
+  <% end %>
+  
 </div>
 

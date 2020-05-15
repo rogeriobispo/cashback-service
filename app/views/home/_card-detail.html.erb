@@ -1,7 +1,9 @@
 <div class="main-card-offer">
-  <p class="main-card-offer-tag">Premium</p>
+  <% if offer.premium %>
+    <p class="main-card-offer-tag">Premium</p>  
+  <% end%>
   <h1>
-    Wallmart
+    <%= offer.advertiser_name%>
   </h1>
-  <a href="#">Shop Now</a>
+  <a href="<%= offer.url %>">Shop Now</a>
 </div>

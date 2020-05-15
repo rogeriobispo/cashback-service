@@ -7,4 +7,8 @@ FactoryBot.define do
     ends_at { Date.today + 3.days }
     premium { false }
   end
+
+  factory :offerPremium do 
+    premium { true }
+  end
 end
