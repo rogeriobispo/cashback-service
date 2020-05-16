@@ -19,5 +19,7 @@ test:
 production:
   <<: *default
   database: cashback_service_production
-  username: cashback_service
-  password: <%= ENV['CASHBACK_SERVICE_DATABASE_PASSWORD'] %>
+  host: ec2-54-210-128-153.compute-1.amazonaws.com
+  port: 5432
+  username: cscaukuywpsxrl
+  password: de1dcae2a3644a8a719c8e89af28db97410a642f031ce271e922e729d6e71345
