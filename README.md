@@ -37,4 +37,11 @@
  
  ## How to run Test Suite
      * rspec -fd
+ ## Images
+ 
+ ![img](https://github.com/rogeriobispo/cashback-service/blob/master/web-visualization.png?raw=true)
+ 
+ 
+ ![img](https://github.com/rogeriobispo/cashback-service/blob/master/mobile-view.png?raw=true)
+ 
  
