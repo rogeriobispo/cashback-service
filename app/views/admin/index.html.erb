@@ -1,0 +1,45 @@
+<% if current_user %>
+  Logged in as <%= current_user.email %>.
+  <%= link_to "Log Out", logout_path %>
+<% else %>
+  <%= link_to "Sign Up", signup_path %> or
+  <%= link_to "Log In", login_path %>
+<% end %>
+
+<section>
+  <h1>Offers</h1>
+  <%= link_to "New Offer", new_offer_path,  class: "btn btn-primary" %>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>name</th>
+      <th>Url</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+    </thead >
+    <tbody id="tableTasks">
+    <% @offers.each do |offer| %>
+      <tr>
+        <td><%= offer.id %></td>
+        <td><%= offer.advertiser_name %></td>
+        <td><%= offer.url %></td>
+        <td><%= offer.status ? 'Enabled' : 'Disabled' %>
+        </td>
+        <td>
+            <%= link_to "Edit", edit_offer_url(offer), class: 'btn btn-info' %>
+          <%= link_to "#{offer.status ? 'disable' : 'Enabled' }", edit_offer_url(offer), class: 'btn btn-info' %>
+          <%= link_to 'Destroy', edit_offer_path(offer), method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger'%>
+        </td>
+
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+  <div id="alerta" class="alert" role="alert">
+    &nbsp;
+  </div>
+</section>
+
