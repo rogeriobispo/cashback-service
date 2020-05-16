@@ -247,7 +247,16 @@
       "/home/rogerio/projetos/cashback-service/config/routes.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
           null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
           1,
           1,
           null
@@ -257,6 +266,12 @@
         "lines": [
           1,
           null,
+          null
+        ]
+      },
+      "/home/rogerio/projetos/cashback-service/app/helpers/sessions_helper.rb": {
+        "lines": [
+          1,
           null
         ]
       },
@@ -275,6 +290,6 @@
         ]
       }
     },
-    "timestamp": 1589553948
+    "timestamp": 1589602274
   }
 }

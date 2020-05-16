@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/rspec/rspec-rails.git
-  revision: 59ae53157e9f85ae662c4610fd428b86af7628af
+  revision: d33432a8fac8c3d2352f34988f702979ea2e4ef5
   branch: master
   specs:
     rspec-rails (4.1.0.pre)
@@ -105,6 +105,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -276,6 +277,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   capybara (= 2.15)
   factory_bot_rails

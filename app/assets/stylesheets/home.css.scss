@@ -47,3 +47,16 @@
   text-align: center;
   line-height: 50px;
 }
+
+
+.offer-count-time{
+  border: 1px solid red;
+  position: absolute;
+  left: -30px;
+  top:0;
+  transform: rotate(300deg);
+}
+
+.offer-count-time table tr td{
+  padding: 0 4px;
+}

@@ -1,4 +1,24 @@
-<div class="main-card-offer">
+<%= javascript_pack_tag 'home' %>
+<script>
+    time_tiking(String(<%= offer.id%>), <%= offer.ends_at.end_of_day.to_json.html_safe %>)
+</script>
+<div class="main-card-offer" id="offer_id_<%= offer.id%>">
+  <div class="offer-count-time">
+    <table>
+      <tr>
+        <td>Days</td>
+        <td>hours</td>
+        <td>Mins</td>
+        <td>Secs</td>
+      </tr>
+      <tr>
+        <td id="days_<%= offer.id%>"></td>
+        <td id="hours_<%= offer.id%>"></td>
+        <td id="mins_<%= offer.id%>"></td>
+        <td id="secs_<%= offer.id%>"></td>
+      </tr>
+    </table>
+  </div>
   <% if offer.premium %>
     <p class="main-card-offer-tag">Premium</p>  
   <% end%>
