@@ -17,5 +17,5 @@ test:
   database: cashback_service_test
 
 production:
-  url: postgres://eyaedtgmrcybbv:b87f8f37345c1f553944ba44c7eeb51afecd40ebbe017767469279a869a91ba2@ec2-34-233-186-251.compute-1.amazonaws.com:5432/d57ocl7s9cudoh
+  url: <%= ENV['DATABASE_URL'] %>
 
