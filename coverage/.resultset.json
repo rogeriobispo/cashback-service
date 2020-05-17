@@ -44,11 +44,13 @@
           1
         ]
       },
-      "/home/rogerio/projetos/cashback-service/app/command/offer/offer_filter.rb": {
+      "/home/rogerio/projetos/cashback-service/app/command/offer_filter.rb": {
         "lines": [
           1,
           1,
           5,
+          null,
+          null,
           null,
           null
         ]
@@ -365,6 +367,6 @@
         ]
       }
     },
-    "timestamp": 1589663295
+    "timestamp": 1589683818
   }
 }
