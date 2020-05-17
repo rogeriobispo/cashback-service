@@ -37,6 +37,11 @@
  
  ## How to run Test Suite
      * rspec -fd
+
+ ## Routes 
+    * Home without protection https://cashback-service.herokuapp.com/
+    * Home admin https://cashback-service.herokuapp.com/admin
+
  ## Images
  
  ![img](https://github.com/rogeriobispo/cashback-service/blob/master/web-visualization.png?raw=true)

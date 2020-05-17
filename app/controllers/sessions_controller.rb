@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to admin_home_path, flash: { success: 'user logged' }
     else
-      redirect_to sessions_new_path, flash: { danger: 'User/Password invalid' }
+      redirect_to new_session_url, flash: { danger: 'User/Password invalid' }
     end
   end
 
