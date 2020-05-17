@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-05-16T23:50:18-03:00">2020-05-16T23:50:18-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-05-17T00:02:42-03:00">2020-05-17T00:02:42-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  98.89%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.64
+         1.53
        </span>
     </span> hits/line
     )
@@ -44,10 +44,10 @@
 
   <div class="t-line-summary">
     <b>90</b> relevant lines,
-    <span class="green"><b>90</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <span class="green"><b>89</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  98.89%
 </span>
 )
   </div>
@@ -73,7 +73,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#09de951e0a8142b75101d54a05f65acc97bc349b" class="src_link" title="app/command/offer_filter.rb">app/command/offer_filter.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">7</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
@@ -160,12 +160,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#02cd8fe9f04020c13ad17e71afc6d0636947bc18" class="src_link" title="app/models/offer.rb">app/models/offer.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="red strong cell--number t-file__coverage">75.00 %</td>
             <td class="cell--number">7</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">3.25</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0.75</td>
             
           </tr>
         
@@ -406,7 +406,7 @@
 
             
 
-            <code class="ruby">    Offer.where(&#39;starts_at &lt;= ?&#39;, Date.today)</code>
+            <code class="ruby">    Offer.where(&quot;starts_at &lt;= ? and (ends_at ISNULL or ends_at &gt;= ? )&quot;, Date.today, Date.today)</code>
           </li>
         </div>
       
@@ -428,23 +428,12 @@
 
             
 
-            <code class="ruby">         .select(&amp;:status)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="6">
-            
-            
-
-            
-
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -1274,8 +1263,8 @@
   <div class="header">
     <h3>app/models/offer.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  75.0%
 </span>
 
       lines covered
@@ -1285,8 +1274,8 @@
 
     <div class="t-line-summary">
       <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -1341,8 +1330,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="5">
-            <span class="hits">10</span>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
             
 
             
