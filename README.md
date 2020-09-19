@@ -1,7 +1,7 @@
 # README
 
 ## Motivation
-  Market place to share promotions with cacheback
+  Market place to share promotions with cashback
 
 ## Addons
     * authentication to admin area
